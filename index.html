@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/e-icon.png">
   <link rel="stylesheet" href="./styles/index.css">
   <title>Emma</title>
 </head>
@@ -16,13 +17,14 @@
         <li><a href="/" class="navbar-links">Experience</a></li>
         <li><a href="/" class="navbar-links">Testimonials</a></li>
       </ul>
-    </div>
-    <div class="day-night-toggle">
-      <form>
-        <label for="checkbox">Invert Colours</label>
-        <input type="checkbox" id="checkbox" name="checkbox">
-      </form>
-    </div>
+      </div>
+      <div class="day-night-toggle">
+        <p aria-hidden="true">Invert colours</p>
+        <label class="switch">
+          <input aria-label="Invert colours" type="checkbox" id="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
 
   </div>
   <main>
@@ -34,19 +36,19 @@
     <h3>What I love</h3>
     <div class="love-content">
       <div>
-        <img class="love-icon" src="./images/document-icon-blue.png" alt="document">
+        <img class="love-icon" id="document-icon" src="./images/document-icon-blue.png" alt="document">
         <p>Figma, Google Docs, and a colour-coded spreadsheet</p>
       </div>
       <div>
-        <img class="love-icon" src="./images/like-icon-blue.png" alt="heart">
+        <img class="love-icon"id="like-icon" src="./images/like-icon-blue.png" alt="heart">
         <p>Accessibility and inclusive design</p>
       </div>
       <div>
-        <img class="love-icon" src="./images/key-icon-blue.png" alt="key">
+        <img class="love-icon" id="key-icon" src="./images/key-icon-blue.png" alt="key">
         <p>Collaborating with product managers and engineers</p>
       </div>
       <div>
-        <img class="love-icon" src="./images/star-icon-blue.png" alt="start">
+        <img class="love-icon" id="star-icon" src="./images/star-icon-blue.png" alt="start">
         <p>Finding a balance between utility and brand voice</p>
       </div>
     </div>
@@ -61,5 +63,6 @@
     <a href="/">More about my experience</a>
   </div>
 </main>
+<script src="./src/index.js"></script>
 </body>
 </html>
